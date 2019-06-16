@@ -12,32 +12,32 @@
         <img class="header__logo-image" src="img/logo-device.svg" width="163" height="35" alt="DEVICE">
       </a>
       <nav class="main-nav">
-        <form class="main-nav__item search-form">
-          <input class="search-form__item" id="search" type="search" name="search" placeholder="Поиск по сайту">
+        <form class="main-nav__item search-form" method="get" action="https://echo.htmlacademy.ru">
+          <input class="search-form__item" id="search" type="search" name="search" placeholder="Поиск по сайту" autocomplete=«off»>
           <button class="search-form__btn" type="submit">Найти</button>
           <label class="search-form__label" for="search"></label>
         </form>
         <ul class="main-nav__item user-list">
           <li class="user-list__item user-list__item--login">
-            <a class="user-list__link user-list__link--login" href="login.html">Войти</a>
+            <a class="user-list__link user-list__link--login" href="#">Войти</a>
           </li>
           <li class="user-list__item user-list__item--compare">
-            <a class="user-list__link user-list__link--compare" href="login.html">Сравнить</a>
+            <a class="user-list__link user-list__link--compare" href="#">Сравнить</a>
           </li>
           <li class="user-list__item">
-            <a class="user-list__link user-list__link--cart" href="cart.html">Корзина</a>
+            <a class="user-list__link user-list__link--cart" href="#">Корзина</a>
           </li>
         </ul>
         <ul class="main-nav__item navigation-list">
           <li class="navigation-list__item">
-            <a href="catalog.html" class="navigation-list__link navigation-list__link--catalog catalog-menu">Каталог товаров</a>
+            <a href="#" class="navigation-list__link navigation-list__link--catalog catalog-menu">Каталог товаров</a>
             <div class="catalog-menu__wrap">
               <ul class="catalog-menu__list">
                 <li class="catalog-menu__item">
                   <a href="#" class="catalog-menu__link">Виртуальная реальность</a>
                 </li>
                 <li class="catalog-menu__item">
-                  <a href="#" class="catalog-menu__link">Моноподы для селфи</a>
+                  <a href="catalog.html" class="catalog-menu__link">Моноподы для селфи</a>
                 </li>
                 <li class="catalog-menu__item catalog-menu__item--action">
                   <a href="#" class="catalog-menu__link">Экшн-камеры</a>
@@ -177,37 +177,49 @@
         <ul class="categories__list">
           <li class="categories__item">
             <a class="categories__link" href="#">
-              <div class="categories__link-wrap categories__link-wrap--vr"></div>
+              <div class="categories__link-wrap categories__link-wrap--vr">
+                <img class="categories__link-img" src="img/popular-1.svg" alt="Очки VR" width="97" height="55">
+              </div>
               <h3 class="categories__heading">Виртуальная реальность</h3>
             </a>
           </li>          
           <li class="categories__item">
             <a class="categories__link" href="#">
-              <div class="categories__link-wrap categories__link-wrap--monopods"></div>
+              <div class="categories__link-wrap categories__link-wrap--monopods">
+                <img class="categories__link-img" src="img/popular-2.svg" alt="Монопод для селфи" width="86" height="117">
+              </div>
               <h3 class="categories__heading">Моноподы для селфи</h3>
             </a>
           </li>
           <li class="categories__item">
             <a class="categories__link" href="#">
-              <div class="categories__link-wrap categories__link-wrap--action"></div>
+              <div class="categories__link-wrap categories__link-wrap--action">
+                <img class="categories__link-img" src="img/popular-3.svg" alt="Экшн-камера" width="71" height="87">
+              </div>
               <h3 class="categories__heading">Экшн-камеры</h3>
             </a>
           </li>
           <li class="categories__item">
             <a class="categories__link" href="#">
-              <div class="categories__link-wrap categories__link-wrap--fitness"></div>
+              <div class="categories__link-wrap categories__link-wrap--fitness">
+                <img class="categories__link-img" src="img/popular-4.svg" alt="Фитнес-браслет" width="107" height="65">
+              </div>
               <h3 class="categories__heading">Фитнес-браслеты</h3>
             </a>
           </li>
           <li class="categories__item">
             <a class="categories__link" href="#">
-              <div class="categories__link-wrap categories__link-wrap--clock"></div>
+              <div class="categories__link-wrap categories__link-wrap--clock">
+                <img class="categories__link-img" src="img/popular-5.svg" alt="Умные часы" width="56" height="98">
+              </div>
               <h3 class="categories__heading">Умные часы</h3>
             </a>
           </li>
           <li class="categories__item">
             <a class="categories__link" href="#">
-              <div class="categories__link-wrap categories__link-wrap--quadcopters"></div>
+              <div class="categories__link-wrap categories__link-wrap--quadcopters">
+                <img class="categories__link-img" src="img/popular-6.svg" alt="Квадрокоптер" width="132" height="69">
+              </div>
               <h3 class="categories__heading">Квадрокоптеры</h3>
             </a>
           </li>
@@ -290,23 +302,24 @@
     </main>
 
     <footer class="footer">
-      <div class="footer-top container">
+      <div class="container">
+        <div class="footer-top">
         <a class="footer-top__logo">
           <img class="footer-top__logo-image" src="img/yellow-logo.svg" width="163" height="35" alt="DEVICE">
         </a>
         <ul class="footer-top__item footer-user-list">
           <li class="footer-user-list__item footer-user-list__item--login">
-            <a class="footer-user-list__link footer-user-list__link--login" href="login.html">Войти</a>
+            <a class="footer-user-list__link footer-user-list__link--login" href="#">Войти</a>
           </li>
           <li class="footer-user-list__item footer-user-list__item--compare">
-            <a class="footer-user-list__link footer-user-list__link--compare" href="login.html">Сравнить</a>
+            <a class="footer-user-list__link footer-user-list__link--compare" href="#">Сравнить</a>
           </li>
           <li class="footer-user-list__item footer-user-list__item--cart">
-            <a class="footer-user-list__link footer-user-list__link--cart" href="cart.html">Корзина</a>
+            <a class="footer-user-list__link footer-user-list__link--cart" href="#">Корзина</a>
           </li>
         </ul>
       </div>
-      <div class="footer-middle container">
+      <div class="footer-middle">
         <p class="footer-middle__address">г. Москва, ул. Строителей, 15</p>
         <ul class="footer-middle__item footer-navigation-list">
           <li class="footer-navigation-list__item">
@@ -321,7 +334,7 @@
         </ul>
         <p class="footer-middle__tel">Тел.: +7 (495) 495-95-95</p>
       </div>
-      <div class="footer-bottom container">
+      <div class="footer-bottom">
         <ul class="footer-bottom__social social">
           <li class="social__item">
               <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"><span class="visually-hidden">Мы в Фейсбуке</span></a>
@@ -336,6 +349,7 @@
         <a class="footer-bottom__copyright" href="https://htmlacademy.ru/intensive/htmlcss">
             <img class="footer-bottom__copyright-image" src="img/logo-html.svg" width="27" height="35" alt="html academy">
         </a>
+      </div>
       </div>
     </footer>
 
@@ -369,6 +383,7 @@
         </button>
       </div>
     </section>
+    <script src="js/script.js"></script>
 
   </body>
 </html>
