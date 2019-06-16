@@ -82,7 +82,7 @@ input[type="radio"].visually-hidden {
     font-weight: 800;
     font-size: 18px;
     line-height: 24px;
-    font-family: "Gilroy","Arial",sans-serif;
+    font-family: "Gilroy";
     text-align: center;
     color: #000000;
     text-transform: uppercase;
@@ -211,7 +211,6 @@ input[type="radio"].visually-hidden {
 
 .search-form__btn {
     position: absolute;
-    display: none;
     top: -4px;
     left: 330px;
     width: 85px;
@@ -223,6 +222,8 @@ input[type="radio"].visually-hidden {
     background-color: transparent;
     border: 2px solid #000000;
     cursor: pointer;
+    z-index: -1;
+    opacity: 0;
 }
 
 .search-form__item:focus ~ .search-form__label::before {
@@ -230,7 +231,8 @@ input[type="radio"].visually-hidden {
 }
 
 .search-form__item:focus ~ .search-form__btn {
-    display: block;
+    z-index: 0;
+    opacity: 1
 }
 
 .search-form__btn:hover {
@@ -238,12 +240,21 @@ input[type="radio"].visually-hidden {
     background-color: #000000;
 }
 
+.search-form__btn:focus {
+    z-index: 0;
+    color: #fff;
+    background-color: #000;
+    opacity: 1;
+    transition: all .1s linear
+}
+
 .search-form__btn:active {
     color: rgba(255, 255, 255, 0.3);
     display: block;
 }
 
-.search-form__btn:active ~ .search-form__label::before {
+.search-form__btn:active ~ .search-form__label::before,
+.search-form__btn:focus ~ .search-form__label::before {
     display: block;
 }
 
@@ -323,7 +334,7 @@ input[type="radio"].visually-hidden {
     list-style: none;
     padding: 0;
     width: 100%;
-    font-family: "Gilroy", "Arial", sans-serif;
+    font-family: "Gilroy";
     font-size: 18px;
     font-weight: 800;
     font-style: normal;
@@ -401,7 +412,7 @@ input[type="radio"].visually-hidden {
     width: 100%;
     align-content: flex-start;
     height: 140px;
-    font-family: "OpenSans", "Arial", sans-serif;
+    font-family: "OpenSans";
     font-size: 15px;
     font-weight: 300;
     font-style: normal;
@@ -475,7 +486,7 @@ input[type="radio"].visually-hidden {
 }
 
 .slide__title {
-    font-family: "Gilroy", "Arial", sans-serif;
+    font-family: "Gilroy";
     font-size: 47px;
     font-weight: 800;
     font-style: normal;
@@ -505,7 +516,7 @@ input[type="radio"].visually-hidden {
 .properties-table__cell {
     width: 155px;
     padding: 0;
-    font-family: "Gilroy", "Arial", sans-serif;
+    font-family: "Gilroy";
     font-size: 36px;
     font-weight: 300;
     font-style: normal;
@@ -522,7 +533,7 @@ input[type="radio"].visually-hidden {
 .properties-table__name {
     padding: 0;
     padding-top: 5px;
-    font-family: "OpenSans", "Arial", sans-serif;
+    font-family: "OpenSans";
     font-size: 13px;
     font-weight: 300;
     font-style: normal;
@@ -564,7 +575,7 @@ input[type="radio"].visually-hidden {
     font-weight: 800;
     font-size: 179px;
     line-height: 179px;
-    font-family: "Gilroy","Arial",sans-serif;
+    font-family: "Gilroy";
     color: #ffffff;
     z-index: -1;
 }
@@ -674,7 +685,7 @@ input[type="radio"].visually-hidden {
 
 .categories__heading {
     width: 160px;
-    font-family: "Gilroy", "Arial", sans-serif;
+    font-family: "Gilroy";
     font-size: 18px;
     font-weight: 800;
     font-style: normal;
@@ -712,7 +723,7 @@ input[type="radio"].visually-hidden {
 .block__heading {
     width: 217px;
     min-height: 39px;
-    font-family: "Gilroy", "Arial", sans-serif;
+    font-family: "Gilroy";
     font-size: 47px;
     font-weight: 800;
     font-style: normal;
@@ -785,7 +796,7 @@ input[type="radio"].visually-hidden {
     font-weight: 800;
     font-size: 18px;
     line-height: 24px;
-    font-family: "Gilroy","Arial",sans-serif;
+    font-family: "Gilroy";
     text-align: center;
     color: #000000;
     text-transform: uppercase;
@@ -932,7 +943,7 @@ input[type="radio"].visually-hidden {
 }
 
 .company__title, .contacts__title {
-    font-family: "Gilroy", "Arial", sans-serif;
+    font-family: "Gilroy";
     font-size: 47px;
     font-weight: 800;
     font-style: normal;
@@ -970,7 +981,7 @@ input[type="radio"].visually-hidden {
 
 .company__list {
     list-style: none;
-    font-family: "Gilroy", "Arial", sans-serif;
+    font-family: "Gilroy";
     font-size: 16px;
     font-weight: 800;
     line-height: 2.5;
@@ -1107,7 +1118,7 @@ input[type="radio"].visually-hidden {
 }
 
 .footer-navigation-list__link {
-    font-family: "Gilroy", "Arial", sans-serif;
+    font-family: "Gilroy";
     font-size: 18px;
     font-weight: 800;
     font-style: normal;
@@ -1207,6 +1218,7 @@ input[type="radio"].visually-hidden {
     padding-top: 93px;
     background-color: #ffffff;
     z-index: 2;
+    box-shadow: 0px 10px 20px 0 rgba(4, 6, 6, 0.2);
 }
 
 .feedback-popup__form {
@@ -1224,7 +1236,7 @@ input[type="radio"].visually-hidden {
     font-weight: 800;
     font-size: 18px;
     line-height: 24px;
-    font-family: "Gilroy","Arial",sans-serif;
+    font-family: "Gilroy";
     color: #000000;
     cursor: pointer;
 }
@@ -1248,7 +1260,7 @@ input[type="radio"].visually-hidden {
     font-weight: normal;
     font-size: 14px;
     line-height: 18px;
-    font-family: "Open Sans","Arial",sans-serif;
+    font-family: "Open Sans";
     color: #464646;
     background-color: rgba(230, 230, 230, 0.5);
     border: 0;
@@ -1266,7 +1278,7 @@ input[type="radio"].visually-hidden {
 
 .feedback-popup__item:focus {
     background-color: #ffffff;
-    border: 3px solid rgba(240, 197, 46, 0.5);
+    outline: 3px solid rgba(240, 197, 46, 0.5);
 }
 
 .feedback-popup__comment {
@@ -1287,7 +1299,7 @@ input[type="radio"].visually-hidden {
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
-    font-family: "Open Sans","Arial",sans-serif;
+    font-family: "Open Sans";
     color: rgba(70, 70, 70, 0.4);
 }
 
@@ -1297,7 +1309,7 @@ input[type="radio"].visually-hidden {
 
 .feedback-popup__comment:focus {
     background-color: #ffffff;
-    border: 3px solid rgba(240, 197, 46, 0.5);
+    outline: 3px solid rgba(240, 197, 46, 0.5);
 }
 
 .feedback-popup__close, .map-popup__close {
@@ -1378,7 +1390,7 @@ input[type="radio"].visually-hidden {
     font-weight: 800;
     font-size: 47px;
     line-height: 48px;
-    font-family: "Gilroy","Arial",sans-serif;
+    font-family: "Gilroy";
     color: #000000;
     letter-spacing: 0.5px;
 }
@@ -1450,6 +1462,7 @@ input[type="radio"].visually-hidden {
 /* -------------------------------filter ----------------------------------------*/
 .catalog-left-side-wrapper, .catalog-right-side-wrapper {
     flex-grow: 1;
+    background-color: #efefef;
 }
 
 .catalog-form-header-wrapper {
@@ -1469,18 +1482,16 @@ input[type="radio"].visually-hidden {
     font-weight: 800;
     font-size: 16px;
     line-height: 24px;
-    font-family: "Gilroy","Arial",sans-serif;
+    font-family: "Gilroy";
     color: #000000;
     text-transform: uppercase;
     letter-spacing: 3.2px;
     box-sizing: border-box;
-    background-color: #d9d9d9;
 }
 
 .catalog-form-wrapper {
     display: flex;
     justify-content: flex-end;
-    background-color: #efefef;
 }
 
 .filter {
@@ -1570,7 +1581,7 @@ input[type="radio"].visually-hidden {
     font-weight: 300;
     font-size: 14px;
     line-height: 24px;
-    font-family: "Gilroy","Arial",sans-serif;
+    font-family: "Gilroy";
     color: rgba(0, 0, 0, 0.2);
     letter-spacing: 0;
 }
@@ -1584,7 +1595,7 @@ input[type="radio"].visually-hidden {
 }
 
 .filter__legend {
-    font-family: "Gilroy", "Arial", sans-serif;
+    font-family: "Gilroy";
     font-size: 18px;
     font-weight: 800;
     font-style: normal;
@@ -1597,7 +1608,7 @@ input[type="radio"].visually-hidden {
 }
 
 .filter__label {
-    font-family: "OpenSans", "Arial", sans-serif;
+    font-family: "OpenSans";
     font-size: 14px;
     font-weight: 300;
     font-style: normal;
@@ -1721,7 +1732,7 @@ input[type="radio"].visually-hidden {
     font-weight: 800;
     font-size: 16px;
     line-height: 24px;
-    font-family: "Gilroy","Arial",sans-serif;
+    font-family: "Gilroy";
     color: #000000;
     text-transform: uppercase;
     letter-spacing: 3.2px;
@@ -1747,7 +1758,7 @@ input[type="radio"].visually-hidden {
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
-    font-family: "Open Sans","Arial",sans-serif;
+    font-family: "Open Sans";
     color: rgba(0, 0, 0, 0.3);
 }
 
@@ -1824,7 +1835,7 @@ input[type="radio"].visually-hidden {
     font-weight: 800;
     font-size: 14px;
     line-height: 60px;
-    font-family: "Gilroy","Arial",sans-serif;
+    font-family: "Gilroy";
     text-align: center;
     color: #000000;
     text-transform: uppercase;
@@ -1847,7 +1858,7 @@ input[type="radio"].visually-hidden {
     font-weight: 800;
     font-size: 18px;
     line-height: 24px;
-    font-family: "Gilroy","Arial",sans-serif;
+    font-family: "Gilroy";
     color: #000000;
     letter-spacing: 0.2px;
 }
@@ -1867,7 +1878,6 @@ input[type="radio"].visually-hidden {
     position: absolute;
     top: 0;
     left: 0;
-    display: none;
     width: 360px;
     height: 380px;
     padding-top: 169px;
@@ -1876,10 +1886,30 @@ input[type="radio"].visually-hidden {
     text-align: center;
     background-color: rgba(238, 238, 238, 0.7);
     box-sizing: border-box;
+    opacity: 0;
+    z-index: -1;
 }
 
-.catalog__item:hover .gadget__hover {
-    display: block;
+.catalog__item:hover .gadget__hover,
+.catalog__item:focus .gadget__hover {
+    z-index: 0;
+    opacity: 1;
+}
+
+.catalog__item:focus-within .gadget__hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 360px;
+    height: 380px;
+    padding-top: 169px;
+    padding-right: 90px;
+    padding-left: 90px;
+    text-align: center;
+    background-color: rgba(238, 238, 238, 0.7);
+    box-sizing: border-box;
+    z-index: 0;
+    opacity: 1;
 }
 
 .gadget__btn {
@@ -1930,7 +1960,7 @@ input[type="radio"].visually-hidden {
     font-weight: 800;
     font-size: 16px;
     line-height: 24px;
-    font-family: "Gilroy","Arial",sans-serif;
+    font-family: "Gilroy";
     color: #000000;
     text-transform: uppercase;
     letter-spacing: 3.2px;
@@ -1983,7 +2013,7 @@ input[type="radio"].visually-hidden {
     font-weight: 800;
     font-size: 16px;
     line-height: 24px;
-    font-family: "Gilroy","Arial",sans-serif;
+    font-family: "Gilroy";
     color: #000000;
     letter-spacing: 3.2px;
     opacity: 0.3;
