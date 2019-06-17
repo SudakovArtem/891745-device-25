@@ -1713,6 +1713,7 @@ input[type="radio"].visually-hidden {
 
 .filter__item--color {
     padding-bottom: 27px;
+    flex-direction: column;
 }
 
 .filter__item::before {
@@ -1890,6 +1891,7 @@ input[type="radio"].visually-hidden {
 
 .filter__item--bluetooth {
     padding-bottom: 23px;
+    flex-direction: column;
 }
 
 .filter__btn {
@@ -2043,6 +2045,7 @@ input[type="radio"].visually-hidden {
     position: relative;
     width: 360px;
     margin-right: 40px;
+    background-color: #ebebeb;
 }
 
 .catalog__item:nth-child(2n) {
