@@ -1402,7 +1402,7 @@ input[type="radio"].visually-hidden {
     font-weight: normal;
     font-size: 14px;
     line-height: 18px;
-    font-family: "Open Sans";
+    font-family: "OpenSans";
     color: #464646;
     background-color: rgba(230, 230, 230, 0.5);
     border: 0;
@@ -1413,18 +1413,22 @@ input[type="radio"].visually-hidden {
 
 .feedback-popup__item::-webkit-input-placeholder {
     color: rgba(70, 70, 70, 0.4);
+    font-family: OpenSans;
 }
 
 .feedback-popup__item:-ms-input-placeholder {
     color: rgba(70, 70, 70, 0.4);
+    font-family: OpenSans;
 }
 
 .feedback-popup__item::-ms-input-placeholder {
     color: rgba(70, 70, 70, 0.4);
+    font-family: OpenSans;
 }
 
 .feedback-popup__item::placeholder {
     color: rgba(70, 70, 70, 0.4);
+    font-family: OpenSans;
 }
 
 .feedback-popup__item:hover {
@@ -1454,7 +1458,7 @@ input[type="radio"].visually-hidden {
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
-    font-family: "Open Sans";
+    font-family: OpenSans;
     color: rgba(70, 70, 70, 0.4);
 }
 
@@ -1462,7 +1466,7 @@ input[type="radio"].visually-hidden {
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
-    font-family: "Open Sans";
+    font-family: OpenSans;
     color: rgba(70, 70, 70, 0.4);
 }
 
@@ -1470,7 +1474,7 @@ input[type="radio"].visually-hidden {
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
-    font-family: "Open Sans";
+    font-family: OpenSans;
     color: rgba(70, 70, 70, 0.4);
 }
 
@@ -1478,7 +1482,7 @@ input[type="radio"].visually-hidden {
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
-    font-family: "Open Sans";
+    font-family: OpenSans;
     color: rgba(70, 70, 70, 0.4);
 }
 
@@ -1726,7 +1730,10 @@ input[type="radio"].visually-hidden {
 
 .filter__item--color {
     padding-bottom: 27px;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
 .filter__item::before {
@@ -1904,7 +1911,10 @@ input[type="radio"].visually-hidden {
 
 .filter__item--bluetooth {
     padding-bottom: 23px;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
 .filter__btn {
@@ -1988,7 +1998,7 @@ input[type="radio"].visually-hidden {
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
-    font-family: "Open Sans";
+    font-family: "OpenSans";
     color: rgba(0, 0, 0, 0.3);
 }
 
