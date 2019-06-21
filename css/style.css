@@ -1,29 +1,42 @@
 @font-face {
     font-family: OpenSans; 
-    src: url(../fonts/opensanslight.woff2);
     font-weight: 300;
     font-style: normal;
+    src: local("OpenSans Light"), 
+    local("OpenSans-Light"), 
+    url(../fonts/opensanslight.woff) format("woff"), 
+    url(../fonts/opensanslight.woff2) format("woff2");
 }
 
 @font-face {
     font-family: OpenSans; 
-    src: url(../fonts/opensans.woff2);
     font-weight: normal;
     font-style: normal;
+    src: local("OpenSans Normal"), 
+    local("OpenSans-Normal"), 
+    url(../fonts/opensans.woff) format("woff"), 
+    url(../fonts/opensans.woff2) format("woff2");
+
 }
 
 @font-face {
     font-family: Gilroy; 
-    src: url(../fonts/gilroylight.woff2);
     font-weight: 300;
     font-style: normal;
+    src: local("Gilroy Light"), 
+    local("Gilroy-Light"), 
+    url(../fonts/gilroylight.woff) format("woff"), 
+    url(../fonts/gilroylight.woff2) format("woff2");
 }
 
 @font-face {
     font-family: Gilroy; 
-    src: url(../fonts/gilroyextrabold.woff2);
     font-weight: 800;
     font-style: normal;
+    src: local("Gilroy ExtraBold"), 
+    local("Gilroy-ExtraBold"), 
+    url(../fonts/gilroyextrabold.woff) format("woff"), 
+    url(../fonts/gilroyextrabold.woff2) format("woff2");
 }
 
 body {
@@ -730,6 +743,7 @@ input[type="radio"].visually-hidden {
 }
 
 .categories__link-img {
+    height: 100%;
     margin: auto;
 }
 
@@ -1273,12 +1287,11 @@ input[type="radio"].visually-hidden {
 }
 
 .social {
-    padding-left: 500px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     list-style: none;
-    margin: 0;
+    margin: 0 auto 0 460px;
 }
 
 .social__link {
@@ -1313,7 +1326,7 @@ input[type="radio"].visually-hidden {
     content: "";
     position: absolute;
     bottom: 20px;
-    left: 20px;
+    left: 0;
     width: 80px;
     height: 7px;
     background-color: #ffc600;
@@ -2045,7 +2058,6 @@ input[type="radio"].visually-hidden {
     position: relative;
     width: 360px;
     margin-right: 40px;
-    background-color: #ebebeb;
 }
 
 .catalog__item:nth-child(2n) {
@@ -2094,6 +2106,10 @@ input[type="radio"].visually-hidden {
     font-family: "Gilroy";
     color: #000000;
     letter-spacing: 0.2px;
+}
+
+.gadget__image {
+    background-color: #ebebeb;
 }
 
 .catalog__item:nth-child(2) .gadget__description {
