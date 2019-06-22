@@ -42,7 +42,7 @@
 body {
     margin: 0;
     padding: 0;
-    width: 100%;
+    min-width: 1200px;
     font-family: "OpenSans", "Arial", sans-serif;
     font-size: 15px;
     font-weight: 300;
@@ -96,7 +96,7 @@ input[type="radio"].visually-hidden {
     font-weight: 800;
     font-size: 18px;
     line-height: 24px;
-    font-family: "Gilroy";
+    font-family: "Gilroy", "Arial", sans-serif;
     text-align: center;
     color: #000000;
     text-transform: uppercase;
@@ -143,10 +143,9 @@ input[type="radio"].visually-hidden {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     min-height: 340px;
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(12%, #ffffff), color-stop(12%, #f7e296));
-    background-image: -webkit-linear-gradient(#ffffff 12%, #f7e296 12%);
-    background-image: -o-linear-gradient(#ffffff 12%, #f7e296 12%);
-    background-image: linear-gradient(#ffffff 12%, #f7e296 12%);
+    background-image: -webkit-linear-gradient(#ffffff 40px, #f7e296 40px);
+    background-image: -o-linear-gradient(#ffffff 40px, #f7e296 40px);
+    background-image: linear-gradient(#ffffff 40px, #f7e296 40px);
 }
 
 .inner-page .header {
@@ -161,6 +160,10 @@ input[type="radio"].visually-hidden {
     position: absolute;
     left: 60px;
     top: 20px;
+}
+
+.inner-page .header__logo {
+    top: 25px;
 }
 
 .header__logo:hover,
@@ -390,7 +393,7 @@ input[type="radio"].visually-hidden {
     list-style: none;
     padding: 0;
     width: 100%;
-    font-family: "Gilroy";
+    font-family: "Gilroy", "Arial", sans-serif;
     font-size: 18px;
     font-weight: 800;
     font-style: normal;
@@ -476,7 +479,7 @@ input[type="radio"].visually-hidden {
     -ms-flex-line-pack: start;
         align-content: flex-start;
     height: 140px;
-    font-family: "OpenSans";
+    font-family: "OpenSans", "Arial", sans-serif;
     font-size: 15px;
     font-weight: 300;
     font-style: normal;
@@ -553,7 +556,7 @@ input[type="radio"].visually-hidden {
 }
 
 .slide__title {
-    font-family: "Gilroy";
+    font-family: "Gilroy", "Arial", sans-serif;
     font-size: 47px;
     font-weight: 800;
     font-style: normal;
@@ -583,7 +586,7 @@ input[type="radio"].visually-hidden {
 .properties-table__cell {
     width: 155px;
     padding: 0;
-    font-family: "Gilroy";
+    font-family: "Gilroy", "Arial", sans-serif;
     font-size: 36px;
     font-weight: 300;
     font-style: normal;
@@ -600,7 +603,7 @@ input[type="radio"].visually-hidden {
 .properties-table__name {
     padding: 0;
     padding-top: 5px;
-    font-family: "OpenSans";
+    font-family: "OpenSans", "Arial", sans-serif;
     font-size: 13px;
     font-weight: 300;
     font-style: normal;
@@ -646,7 +649,7 @@ input[type="radio"].visually-hidden {
     font-weight: 800;
     font-size: 179px;
     line-height: 179px;
-    font-family: "Gilroy";
+    font-family: "Gilroy", "Arial", sans-serif;
     color: #ffffff;
     z-index: -1;
 }
@@ -751,7 +754,8 @@ input[type="radio"].visually-hidden {
     width: 100px;
 }
 .categories__link-wrap--monopods .categories__link-img {
-    margin: 2px auto;
+    margin: auto;
+    margin-bottom: -20px;
     margin-top: auto;
 }
 
@@ -767,7 +771,7 @@ input[type="radio"].visually-hidden {
 
 .categories__heading {
     width: 160px;
-    font-family: "Gilroy";
+    font-family: "Gilroy", "Arial", sans-serif;
     font-size: 18px;
     font-weight: 800;
     font-style: normal;
@@ -786,10 +790,9 @@ input[type="radio"].visually-hidden {
     margin-top: 22px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(36%, #ffffff), color-stop(36%, #e5e5e5));
-    background-image: -webkit-linear-gradient(#ffffff 36%, #e5e5e5 36%);
-    background-image: -o-linear-gradient(#ffffff 36%, #e5e5e5 36%);
-    background-image: linear-gradient(#ffffff 36%, #e5e5e5 36%);
+    background-image: -webkit-linear-gradient(#ffffff 160px, #e5e5e5 160px);
+    background-image: -o-linear-gradient(#ffffff 160px, #e5e5e5 160px);
+    background-image: linear-gradient(#ffffff 160px, #e5e5e5 160px);
 }
 
 .services__benefit {
@@ -814,7 +817,7 @@ input[type="radio"].visually-hidden {
 .block__heading {
     width: 217px;
     min-height: 39px;
-    font-family: "Gilroy";
+    font-family: "Gilroy", "Arial", sans-serif;
     font-size: 47px;
     font-weight: 800;
     font-style: normal;
@@ -870,7 +873,7 @@ input[type="radio"].visually-hidden {
     top: 60px;
     right: -2px;
     width: 7px;
-    height: 319px;
+    height: calc(100% - 12px);
     background-color: #000000;
 }
 
@@ -889,7 +892,7 @@ input[type="radio"].visually-hidden {
     font-weight: 800;
     font-size: 18px;
     line-height: 24px;
-    font-family: "Gilroy";
+    font-family: "Gilroy", "Arial", sans-serif;
     text-align: center;
     color: #000000;
     text-transform: uppercase;
@@ -1056,7 +1059,7 @@ input[type="radio"].visually-hidden {
 }
 
 .company__title, .contacts__title {
-    font-family: "Gilroy";
+    font-family: "Gilroy", "Arial", sans-serif;
     font-size: 47px;
     font-weight: 800;
     font-style: normal;
@@ -1094,7 +1097,7 @@ input[type="radio"].visually-hidden {
 
 .company__list {
     list-style: none;
-    font-family: "Gilroy";
+    font-family: "Gilroy", "Arial", sans-serif;
     font-size: 16px;
     font-weight: 800;
     line-height: 2.5;
@@ -1249,7 +1252,7 @@ input[type="radio"].visually-hidden {
 }
 
 .footer-navigation-list__link {
-    font-family: "Gilroy";
+    font-family: "Gilroy", "Arial", sans-serif;
     font-size: 18px;
     font-weight: 800;
     font-style: normal;
@@ -1378,7 +1381,7 @@ input[type="radio"].visually-hidden {
     font-weight: 800;
     font-size: 18px;
     line-height: 24px;
-    font-family: "Gilroy";
+    font-family: "Gilroy", "Arial", sans-serif;
     color: #000000;
     cursor: pointer;
 }
@@ -1402,7 +1405,7 @@ input[type="radio"].visually-hidden {
     font-weight: normal;
     font-size: 14px;
     line-height: 18px;
-    font-family: "OpenSans";
+    font-family: "OpenSans", "Arial", sans-serif;
     color: #464646;
     background-color: rgba(230, 230, 230, 0.5);
     border: 0;
@@ -1413,22 +1416,22 @@ input[type="radio"].visually-hidden {
 
 .feedback-popup__item::-webkit-input-placeholder {
     color: rgba(70, 70, 70, 0.4);
-    font-family: OpenSans;
+    font-family: "OpenSans", "Arial", sans-serif;
 }
 
 .feedback-popup__item:-ms-input-placeholder {
     color: rgba(70, 70, 70, 0.4);
-    font-family: OpenSans;
+    font-family: "OpenSans", "Arial", sans-serif;
 }
 
 .feedback-popup__item::-ms-input-placeholder {
     color: rgba(70, 70, 70, 0.4);
-    font-family: OpenSans;
+    font-family: "OpenSans", "Arial", sans-serif;
 }
 
 .feedback-popup__item::placeholder {
     color: rgba(70, 70, 70, 0.4);
-    font-family: OpenSans;
+    font-family: "OpenSans", "Arial", sans-serif;
 }
 
 .feedback-popup__item:hover {
@@ -1458,7 +1461,7 @@ input[type="radio"].visually-hidden {
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
-    font-family: OpenSans;
+    font-family: "OpenSans", "Arial", sans-serif;
     color: rgba(70, 70, 70, 0.4);
 }
 
@@ -1466,7 +1469,7 @@ input[type="radio"].visually-hidden {
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
-    font-family: OpenSans;
+    font-family: "OpenSans", "Arial", sans-serif;
     color: rgba(70, 70, 70, 0.4);
 }
 
@@ -1474,7 +1477,7 @@ input[type="radio"].visually-hidden {
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
-    font-family: OpenSans;
+    font-family: "OpenSans", "Arial", sans-serif;
     color: rgba(70, 70, 70, 0.4);
 }
 
@@ -1482,7 +1485,7 @@ input[type="radio"].visually-hidden {
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
-    font-family: OpenSans;
+    font-family: "OpenSans", "Arial", sans-serif;
     color: rgba(70, 70, 70, 0.4);
 }
 
@@ -1506,6 +1509,14 @@ input[type="radio"].visually-hidden {
     border-radius: 50%;
     cursor: pointer;
     opacity: 0.5;
+}
+
+.feedback-popup__close:hover, .map-popup__close:hover {
+    opacity: 1;
+}
+
+.feedback-popup__close:active, .map-popup__close:active {
+    opacity: 0.3;
 }
 
 .feedback-popup__close::before,
@@ -1573,12 +1584,12 @@ input[type="radio"].visually-hidden {
 .main__title {
     margin: 0;
     padding-top: 37px;
-    padding-left: 59px;
+    padding-left: 81px;
     padding-bottom: 20px;
     font-weight: 800;
     font-size: 47px;
     line-height: 48px;
-    font-family: "Gilroy";
+    font-family: "Gilroy", "Arial", sans-serif;
     color: #000000;
     letter-spacing: 0.5px;
 }
@@ -1592,7 +1603,7 @@ input[type="radio"].visually-hidden {
     margin: 0;
     padding: 0;
     padding-bottom: 44px;
-    padding-left: 59px;
+    padding-left: 81px;
     list-style-type: none;
 }
 
@@ -1682,7 +1693,7 @@ input[type="radio"].visually-hidden {
     font-weight: 800;
     font-size: 16px;
     line-height: 24px;
-    font-family: "Gilroy";
+    font-family: "Gilroy", "Arial", sans-serif;
     color: #000000;
     text-transform: uppercase;
     letter-spacing: 3.2px;
@@ -1729,11 +1740,15 @@ input[type="radio"].visually-hidden {
 }
 
 .filter__item--color {
-    padding-bottom: 27px;
+    padding-bottom: 30px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+}
+
+.filter__item--color .filter__legend {
+    padding-bottom: 10px;
 }
 
 .filter__item::before {
@@ -1746,10 +1761,6 @@ input[type="radio"].visually-hidden {
     background-color: #000000;
 }
 
-.filter__legend--range {
-    padding-bottom: 35px;
-}
-
 .range {
     padding-top: 19px;
     padding-left: 0;
@@ -1759,17 +1770,17 @@ input[type="radio"].visually-hidden {
 }
 
 .range__scale {
-    position: relative;
     width: 196px;
     height: 2px;
     background-color: #dbdbdb;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
+    margin-top: 5px;
 }
 
 .range__bar {
     position: absolute;
-    top: 69px;
-    left: 20px;
+    top: 72px;
+    left: 10px;
     width: 110px;
     height: 2px;
     background-color: #91c92f;
@@ -1777,7 +1788,7 @@ input[type="radio"].visually-hidden {
 
 .range__toggle {
     position: absolute;
-    top: 60px;
+    top: 63px;
     width: 20px;
     height: 20px;
     -webkit-box-sizing: border-box;
@@ -1791,24 +1802,24 @@ input[type="radio"].visually-hidden {
 }
 
 .range__toggle--min {
-    left: 0;
+    left: -7px;
 }
 
 .range__toggle--max {
-    left: 122px;
+    left: 108px;
 }
 
 .range__cost {
     font-weight: 300;
     font-size: 14px;
     line-height: 24px;
-    font-family: "Gilroy";
+    font-family: "Gilroy", "Arial", sans-serif;
     color: rgba(0, 0, 0, 0.2);
     letter-spacing: 0;
 }
 
 .range__cost--min {
-    padding-right: 70px;
+    padding-right: 60px;
 }
 
 .range {
@@ -1816,7 +1827,7 @@ input[type="radio"].visually-hidden {
 }
 
 .filter__legend {
-    font-family: "Gilroy";
+    font-family: "Gilroy", "Arial", sans-serif;
     font-size: 18px;
     font-weight: 800;
     font-style: normal;
@@ -1828,8 +1839,9 @@ input[type="radio"].visually-hidden {
     padding-bottom: 13px;
 }
 
+
 .filter__label {
-    font-family: "OpenSans";
+    font-family: "OpenSans", "Arial", sans-serif;
     font-size: 14px;
     font-weight: 300;
     font-style: normal;
@@ -1968,7 +1980,7 @@ input[type="radio"].visually-hidden {
     font-weight: 800;
     font-size: 16px;
     line-height: 24px;
-    font-family: "Gilroy";
+    font-family: "Gilroy", "Arial", sans-serif;
     color: #000000;
     text-transform: uppercase;
     letter-spacing: 3.2px;
@@ -1998,7 +2010,7 @@ input[type="radio"].visually-hidden {
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
-    font-family: "OpenSans";
+    font-family: "OpenSans", "Arial", sans-serif;
     color: rgba(0, 0, 0, 0.3);
 }
 
@@ -2086,7 +2098,7 @@ input[type="radio"].visually-hidden {
     font-weight: 800;
     font-size: 14px;
     line-height: 60px;
-    font-family: "Gilroy";
+    font-family: "Gilroy", "Arial", sans-serif;
     text-align: center;
     color: #000000;
     text-transform: uppercase;
@@ -2113,7 +2125,7 @@ input[type="radio"].visually-hidden {
     font-weight: 800;
     font-size: 18px;
     line-height: 24px;
-    font-family: "Gilroy";
+    font-family: "Gilroy", "Arial", sans-serif;
     color: #000000;
     letter-spacing: 0.2px;
 }
@@ -2215,7 +2227,7 @@ input[type="radio"].visually-hidden {
             align-items: center;
     width: 760px;
     margin: 0;
-    margin-top: -11px;
+    margin-top: -9px;
     margin-bottom: 77px;
     margin-left: 71px;
     padding: 0;
@@ -2227,7 +2239,7 @@ input[type="radio"].visually-hidden {
     font-weight: 800;
     font-size: 16px;
     line-height: 24px;
-    font-family: "Gilroy";
+    font-family: "Gilroy", "Arial", sans-serif;
     color: #000000;
     text-transform: uppercase;
     letter-spacing: 3.2px;
@@ -2239,9 +2251,9 @@ input[type="radio"].visually-hidden {
 .pagination__button--back {
     display: block;
     width: 134px;
-    padding-top: 24px;
+    padding-top: 22px;
     padding-right: 30px;
-    padding-bottom: 22px;
+    padding-bottom: 24px;
     padding-left: 30px;
     text-align: right;
 }
@@ -2249,9 +2261,9 @@ input[type="radio"].visually-hidden {
 .pagination__button--forward {
     display: block;
     width: 134px;
-    padding-top: 24px;
+    padding-top: 22px;
     padding-right: 30px;
-    padding-bottom: 22px;
+    padding-bottom: 24px;
     padding-left: 30px;
 }
 
@@ -2287,7 +2299,7 @@ input[type="radio"].visually-hidden {
     font-weight: 800;
     font-size: 16px;
     line-height: 24px;
-    font-family: "Gilroy";
+    font-family: "Gilroy", "Arial", sans-serif;
     color: #000000;
     letter-spacing: 3.2px;
     opacity: 0.3;
@@ -2347,4 +2359,10 @@ input[type="radio"].visually-hidden {
             animation-name: shake;
     -webkit-animation-duration: 0.6s;
             animation-duration: 0.6s;
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 1200px;
+    padding: 0;
 }
