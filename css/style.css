@@ -178,7 +178,7 @@ input[type="radio"].visually-hidden {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     padding: 40px;
-    padding-top: 80px;
+    padding-top: 78px;
     padding-bottom: 0;
 }
 
@@ -401,7 +401,7 @@ input[type="radio"].visually-hidden {
     letter-spacing: 3.6px;
     color: #000000;
     text-transform: uppercase;
-    margin-top: 25px;
+    margin-top: 26px;
 }
 
 .navigation-list__item {
@@ -719,7 +719,7 @@ input[type="radio"].visually-hidden {
 .categories {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    margin-top: 110px;
+    margin-top: 112px;
 }
 
 .categories__list {
@@ -743,6 +743,8 @@ input[type="radio"].visually-hidden {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; 
+    -webkit-box-sizing: border-box; 
+            box-sizing: border-box;
 }
 
 .categories__link-img {
@@ -752,11 +754,6 @@ input[type="radio"].visually-hidden {
 
 .categories__link-wrap--monopods + .categories__heading {
     width: 100px;
-}
-.categories__link-wrap--monopods .categories__link-img {
-    margin: auto;
-    margin-bottom: -20px;
-    margin-top: auto;
 }
 
 .categories__link:hover .categories__link-wrap,
@@ -783,11 +780,53 @@ input[type="radio"].visually-hidden {
     margin-top: 35px;
 }
 
+.categories__link-wrap--vr {
+    padding-top: 52px;
+    padding-right: 32px;
+    padding-bottom: 53px;
+    padding-left: 31px
+}
+
+.categories__link-wrap--monopods {
+    padding-top: 41px;
+    padding-right: 36px;
+    padding-bottom: 2px;
+    padding-left: 38px
+}
+
+.categories__link-wrap--action {
+    padding-top: 38px;
+    padding-right: 40px;
+    padding-bottom: 35px;
+    padding-left: 49px
+}
+
+.categories__link-wrap--fitness {
+    padding-top: 50px;
+    padding-right: 25px;
+    padding-bottom: 45px;
+    padding-left: 28px
+}
+
+.categories__link-wrap--clock {
+    padding-top: 32px;
+    padding-right: 49px;
+    padding-bottom: 30px;
+    padding-left: 55px
+}
+
+.categories__link-wrap--quadcopters {
+    padding-top: 49px;
+    padding-right: 15px;
+    padding-bottom: 42px;
+    padding-left: 13px
+}
+
 /* -------------------------------services ----------------------------------------*/
 
 .services {
     position: relative;
-    margin-top: 22px;
+    margin-top: 20px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     background-image: -webkit-linear-gradient(#ffffff 160px, #e5e5e5 160px);
@@ -1021,7 +1060,7 @@ input[type="radio"].visually-hidden {
     display: flex;
     margin-top: 87px;
     padding-top: 50px;
-    padding-bottom: 77px;
+    padding-bottom: 80px;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -webkit-box-sizing: border-box;
@@ -1299,7 +1338,7 @@ input[type="radio"].visually-hidden {
 
 .social__link {
     display: block;
-    padding: 0 10px;
+    padding: 0 11px;
     width: 32px;
     height: 32px;
     opacity: 0.3;
@@ -1328,8 +1367,8 @@ input[type="radio"].visually-hidden {
 .footer-bottom::before {
     content: "";
     position: absolute;
-    bottom: 20px;
-    left: 0;
+    bottom: 22px;
+    left: 1;
     width: 80px;
     height: 7px;
     background-color: #ffc600;
@@ -1922,7 +1961,7 @@ input[type="radio"].visually-hidden {
 }
 
 .filter__item--bluetooth {
-    padding-bottom: 23px;
+    padding-bottom: 27px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
