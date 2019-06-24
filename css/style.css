@@ -1482,6 +1482,11 @@ input[type="radio"].visually-hidden {
     outline: 3px solid rgba(240, 197, 46, 0.5);
 }
 
+.feedback-popup__item:invalid {
+    background-color: #f6dada;
+    outline: none;
+}
+
 .feedback-popup__comment {
     display: block;
     width: 760px;
